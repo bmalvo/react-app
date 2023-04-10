@@ -38,7 +38,7 @@ const myCar2 = new Model("Ford", "Mustang");
 
 // Arrow function to invitation
 
-hello = (userName) => 'Hello ' + userName + '!';
+var hello = (userName) => 'Hello ' + userName + '!';
 
 // Declaring Variables
 
@@ -57,4 +57,32 @@ hello = (userName) => 'Hello ' + userName + '!';
 
 // const is a variable that once it has been created, its value can never change.
 // const has a block scope.
+
+
+// Array methods
+
+const myFruits = ['apple', 'banana', 'orange'];
+
+const myListOfFruits = myFruits.map((item) => <p>{item}</p>)
+
+// Destructuring
+
+const vehicles = ['mustang', 'f-150', 'expedition'];
+
+const [car, truck, suv] = vehicles;
+
+const vehicleOne = {
+    brand: 'Ford',
+    model: 'Mustang',
+    type: 'car',
+    year: 2021, 
+    color: 'red'
+  }
+  
+  myVehicle(vehicleOne);
+  
+  function myVehicle({type, color, brand, model}) {
+    const message = 'My ' + type + ' is a ' + color + ' ' + brand + ' ' +
+     model + '.';
+  }
 
