@@ -108,3 +108,9 @@ const [one, two, ...rest] = numbers;
 // import { name, age } from "./person.js";
 // defoult
 // import message from "./message.js";
+
+// Tenary Operator
+
+// The ternary operator is a simplified conditional operator like if / else.
+// Syntax: condition ? <expression if true> : <expression if false></expression>
+//authenticated ? renderApp() : renderLogin();
