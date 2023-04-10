@@ -92,5 +92,19 @@ const numbers = [1, 2, 3, 4, 5, 6];
 
 const [one, two, ...rest] = numbers;
 
+// Modules
+//Export
+// indyvidualy
+// export const name = "Jesse"
+// export const age = 40
+// defoult
+// const name = "Jesse"
+// const age = 40
 
+// export { name, age }
 
+//Import
+// indyvidualy
+// import { name, age } from "./person.js";
+// defoult
+// import message from "./message.js";
