@@ -35,3 +35,7 @@ class Model extends Car{
 }
 
 const myCar2 = new Model("Ford", "Mustang");
+
+// Arrow function to invitation
+
+hello = (userName) => 'Hello ' + userName + '!';
