@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Car from './Car.js';
 import Garage from './Garage.js';
+import Shoot from './Shoot.js';
 //JSX is extention of JS allows write HTML in JS
 
 let x = 3;
@@ -15,6 +16,8 @@ const myFirstElement = (
 <p>Hello {(x) > 1 ? "Mark" : "Twain"}</p>
 <Car color="green"/>
 <Garage />
+<br/>
+<button onClick={Shoot}>Take a shoot!</button>
 </>);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
