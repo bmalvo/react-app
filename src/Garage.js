@@ -1,12 +1,13 @@
 import Car from './Car.js';
 
 function Garage(){
-    let color = 'blue';
-    let brand = 'mistubishi';
+    let cars = ['Mitsubishi', 'Peugeot', 'BMW', 'Nissan'];
     return(
         <>
         <h1>Who lives in my garage?</h1>
-        <Car color={color} brand={brand}/>
+        <ul>
+        {cars.map((car) => <Car brand={car}/>)}
+        </ul>
         </>
     );
 }
