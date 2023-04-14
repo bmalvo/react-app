@@ -5,6 +5,7 @@ import Garage from './Garage.js';
 import Shoot from './Shoot.js';
 import Garage2 from './Garage2.js';
 import Goal from './Goal.js';
+import MyForm from './Form.js';
 //JSX is extention of JS allows write HTML in JS
 
 let carsLoot = ["Mitsubishi", 'Peugeot', "BMW"];
@@ -23,6 +24,7 @@ const myFirstElement = (
 <button onClick={Shoot}>Take a shoot!</button>
 <Garage2 cars={carsLoot}/>
 <Goal isGoal={true}/>
+<MyForm/>
 </>);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
