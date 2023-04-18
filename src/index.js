@@ -7,6 +7,8 @@ import Garage2 from './Garage2.js';
 import Goal from './Goal.js';
 import MyForm from './Form.js';
 import './App.css';
+import { useState } from 'react';
+
 //JSX is extention of JS allows write HTML in JS
 
 let carsLoot = ["Mitsubishi", 'Peugeot', "BMW"];
@@ -18,6 +20,15 @@ const myStyle = {
     padding: "10px",
     fontSize: "20px"
 };
+
+function FavouriteColor(){
+    const [color, setColor] = useState("red");
+
+    return <>
+    <p>My favourite color is {color}!</p>
+           <button type='button' onClick={() => setColor("blue")}>blue</button>
+           </>
+}
 
 const myFirstElement = (
 <>
@@ -33,6 +44,7 @@ const myFirstElement = (
 <Garage2 cars={carsLoot}/>
 <Goal isGoal={true}/>
 <MyForm/>
+<FavouriteColor />
 </>);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
