@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import Car from './Car.js';
 import Garage from './Garage.js';
@@ -30,6 +30,21 @@ function FavouriteColor(){
            </>
 }
 
+function Timer() {
+    const [count, setCount] = useState(0);
+  
+    useEffect(() => {
+    let timer =   setTimeout(() => {
+        setCount((count) => count + 1);
+      }, 1000);
+
+    return () => clearTimeout(timer)  
+    },[]);
+
+    return <h1>I've rendered {count} times!</h1>;
+}
+
+
 const myFirstElement = (
 <>
 <h1 style={{background: 'black',color:'white'}}>Hello React!</h1>
@@ -45,6 +60,7 @@ const myFirstElement = (
 <Goal isGoal={true}/>
 <MyForm/>
 <FavouriteColor />
+<Timer />
 </>);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
